@@ -115,7 +115,7 @@ export default function SecondLast() {
             >
               GoodFirms
               <br />
-              <span className="bg-orange-500 text-white px-2 py-1 rounded mt-1 inline-block">
+              <span className="bg-orange-500 text-white px-1 py-4 rounded mt-1 inline-block">
                 PARTNER
               </span>
             </div>
@@ -123,7 +123,7 @@ export default function SecondLast() {
             <div
               className="text-center text-xs cursor-pointer
                          transition-all duration-300
-                         hover:-translate-y-1 hover:shadow-lg p-3 rounded-lg"
+                         hover:-translate-y-1 hover:shadow-lg px-1 py-4 rounded-lg"
             >
               <div className="text-blue-700 font-bold">
                 TOP ECOMMERCE
