@@ -28,7 +28,7 @@ const blogs = [
     image: blog4,
     title: "Is Your No-Code App a Ticking Time Bomb?",
     desc:
-      "Over the last few years, the no-code and low-code revolution has grown incredibly popular...",
+      "Over the last few years, the no-code and low-code revolution has bebfb f efe f e f f ef e f re gf r gf re rbergfr gf r g rg r grown incredibly popular...",
   },
   {
     image: blog5,
@@ -46,10 +46,28 @@ const blogs = [
 
 export default function Blog() {
   return (
-    <section className="w-full bg-[#f7f7f7] py-10 px-12">
+    <section className="w-full bg-[#f7f7f7] py-20 px-12">
       <div className="max-w-[150rem] mx-auto px-12">
-        
-        {/* GRID */}
+
+        {/* ===== HEADER ===== */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-14">
+          <h2 className="text-5xl font-bold text-[#0b3c66] leading-tight">
+            Our Latest <span className="text-green-500">Blog Posts</span>.
+          </h2>
+
+          <button
+            className="mt-6 md:mt-0 inline-flex items-center gap-3
+                       bg-green-600 text-white
+                       px-8 py-4 rounded-md font-semibold
+                       shadow-md hover:bg-green-700
+                       transition-all duration-300"
+          >
+            Show all our posts
+            <span className="text-xl">›</span>
+          </button>
+        </div>
+
+        {/* ===== GRID ===== */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogs.map((blog, index) => (
             <BlogCard key={index} blog={blog} />
@@ -66,7 +84,7 @@ export default function Blog() {
 function BlogCard({ blog }) {
   return (
     <div
-      className="bg-white  overflow-hidden shadow-md
+      className="bg-white overflow-hidden shadow-md
                  transition-all duration-300
                  hover:-translate-y-2 hover:shadow-xl"
     >
@@ -75,7 +93,8 @@ function BlogCard({ blog }) {
         <img
           src={blog.image}
           alt={blog.title}
-          className="w-full h-76 object-cover transition-transform duration-300 hover:scale-105"
+          className="w-full h-72 object-cover
+                     transition-transform duration-300 hover:scale-105"
         />
       </div>
 
